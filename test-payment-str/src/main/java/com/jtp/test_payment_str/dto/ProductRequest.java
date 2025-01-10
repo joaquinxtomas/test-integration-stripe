@@ -1,10 +1,17 @@
 package com.jtp.test_payment_str.dto;
 
+import io.swagger.v3.oas.annotations.media.Schema;
+
+@Schema(description = "Product data")
 public class ProductRequest {
 
+    @Schema(description = "Product price")
     private Long amount;
+    @Schema(description = "Quantity of products")
     private Long quantity;
+    @Schema(description = "Product name")
     private String name;
+    @Schema(description = "Product price currency")
     private String currency;
 
     public ProductRequest() {

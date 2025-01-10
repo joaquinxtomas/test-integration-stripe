@@ -1,11 +1,17 @@
 package com.jtp.test_payment_str.dto;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 
+@Schema(description = "Obtaining information from stripe")
 public class StripeResponse {
 
+    @Schema(description = "Payment status")
     private String status;
+    @Schema(description = "Message obtained from stripe")
     private String message;
+    @Schema(description = "Stripe session ID")
     private String sessionId;
+    @Schema(description = "Stripe session URL where the user can complete the payment")
     private String sessionUrl;
 
     public StripeResponse() {
