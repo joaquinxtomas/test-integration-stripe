@@ -15,6 +15,12 @@ public class HomeController {
         return "index";
     }
 
+    @Operation(summary = "Redirect to index page.")
+    @GetMapping("/cancel")
+    public String returnIndex(){
+        return "redirect:/";
+    }
+
     @Operation(summary = "Shows the result when the payment has been completed successfully.")
     @GetMapping("/success")
     public String success(){
