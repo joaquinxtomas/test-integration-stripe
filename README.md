@@ -31,9 +31,14 @@
         <li>Navigate to the project directory:</li>
         <pre><code>cd &lt;project-directory&gt;</code></pre>
         <li>Configure Stripe API keys:</li>
+        <p><strong>To get a secret key in stripe:</p>
+            <ul>
+                <li>Create an account on the Stripe website.</li>
+                <li>In your dashboard, go to Developers -> API Keys</li>
+                <li>There, you will find both a secret key and a public key. Copy the secret key and add it to the application.properties.</li>
+            </ul>
         <pre>
 <code>
-# In application.properties
 stripe.api.key=your_secret_key
 stripe.api.publishableKey=your_publishable_key
 </code>
@@ -99,6 +104,12 @@ stripe.api.publishableKey=your_publishable_key
         <li>Ve al directorio del proyecto:</li>
         <pre><code>cd &lt;directorio-del-proyecto&gt;</code></pre>
         <li>Configura las claves de API de Stripe:</li>
+        <p><strong>Para conseguir tu clave secreta en Stripe:</p>
+            <ul>
+                <li>Crea tu cuenta en la web de Stripe.</li>
+                <li>En tu dashboard, Ve a Desarrolladores -> API Keys</li>
+                <li>TAquí encontrarás una clave secreta y una publica. Copia la clave secreta y pégala en tu application.properties.</li>
+            </ul>
         <pre>
 <code>
 # En application.properties
